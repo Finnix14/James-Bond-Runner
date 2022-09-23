@@ -153,6 +153,11 @@ namespace Unity.LEGO.Minifig
             Wave = 49
         }
 
+        
+
+       
+
+
         [SerializeField, HideInInspector]
         protected Transform leftArmTip = null;
         [SerializeField, HideInInspector]
@@ -396,6 +401,8 @@ namespace Unity.LEGO.Minifig
             }
 
             HandleMotion();
+
+          
         }
 
         protected void FindJointReferences(Transform parent)
@@ -877,6 +884,7 @@ namespace Unity.LEGO.Minifig
             }
         }
 
+        
         // Assumes that direction is not a zero vector.
         void MoveInDirection(Vector3 direction, float minDistance, bool breakBeforeTarget, float speedMultiplier, float minAngle, float rotationSpeedMultiplier, bool cancelSpecial)
         {
