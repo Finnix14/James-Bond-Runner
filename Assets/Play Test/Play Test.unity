@@ -408,6 +408,8 @@ MonoBehaviour:
   - {fileID: 8348018521138768296, guid: 1223dc365c4b7264b87e3ba0992d9af8, type: 3}
   zSpawn: 0
   tileLength: 24
+  numberOfTiles: 5
+  playerTransform: {fileID: 1903787215}
 --- !u!4 &1177068998
 Transform:
   m_ObjectHideFlags: 0
@@ -551,7 +553,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e98577fda26f354090e10308c93da2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forwardSpeed: 5
+  forwardSpeed: 15
   laneDistance: 4
   jumpForce: 10
   gravity: -20
