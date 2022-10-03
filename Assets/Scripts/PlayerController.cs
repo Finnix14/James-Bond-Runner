@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
         if (characterController.isGrounded)
         {
             //direction.y = -1;
-            if (Input.GetKeyDown(KeyCode.UpArrow))
+            if (Input.GetKeyDown(KeyCode.Space))
             {
                 Jump();
             }
@@ -44,14 +44,14 @@ public class PlayerController : MonoBehaviour
      
 
 
-        if (Input.GetKeyDown(KeyCode.RightArrow))
+        if (Input.GetKeyDown(KeyCode.D))
         {
             desiredLane++;
             if (desiredLane == 3)
                 desiredLane = 2;
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        if (Input.GetKeyDown(KeyCode.A))
         {
             desiredLane--;
             if (desiredLane == -1)
