@@ -14,9 +14,13 @@ public class PlayerController : MonoBehaviour
  
     public float jumpForce;
     public float gravity = -20f;
+
+    public Animator anim;
     void Start()
     {
-        characterController = GetComponent<CharacterController>();  
+        characterController = GetComponent<CharacterController>();
+        anim = GetComponent<Animator>();
+
     }
 
     void Update()
@@ -71,10 +75,12 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         characterController.Move(direction * Time.fixedDeltaTime);
+
     }
 
     private void Jump()
     {
         direction.y = jumpForce;
+        anim.SetTrigger("Jump");
     }
 }
