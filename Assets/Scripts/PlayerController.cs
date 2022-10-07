@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     public float gravity = -20f;
 
     public Animator anim;
+    public float playerScore;
     void Start()
     {
         characterController = GetComponent<CharacterController>();
