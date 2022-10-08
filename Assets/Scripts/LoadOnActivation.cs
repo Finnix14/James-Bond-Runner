@@ -3,9 +3,9 @@ using UnityEngine.SceneManagement;
 
 public class LoadOnActivation : MonoBehaviour
 {
-    void OnEnable()
+    public void OnEnable()
     {
         // Only specifying the sceneName or sceneBuildIndex will load the Scene with the Single mode
-        SceneManager.LoadScene("WalterBlanco", LoadSceneMode.Additive);
+        SceneManager.LoadScene("", LoadSceneMode.Additive);
     }
 }

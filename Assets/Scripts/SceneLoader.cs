@@ -5,14 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
-   
-   
 
-   public void LoadLevel()
+
+
+    public void LoadLevel()
     {
 
-        SceneManager.LoadScene("Play Test");
+        SceneManager.LoadScene("Cinematic");
     }
-    
+
 
 }
