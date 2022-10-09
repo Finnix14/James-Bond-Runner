@@ -17,6 +17,9 @@ public class PlayerController : MonoBehaviour
 
     public Animator anim;
     public float playerScore;
+
+    public AudioSource jump;
+    public AudioSource swipe;
     void Start()
     {
         characterController = GetComponent<CharacterController>();
@@ -46,14 +49,19 @@ public class PlayerController : MonoBehaviour
             desiredLane++;
             if (desiredLane == 3)
                 desiredLane = 2;
+            swipe.Play();
         }
+
+      
 
         if (Input.GetKeyDown(KeyCode.A))
         {
             desiredLane--;
             if (desiredLane == -1)
                 desiredLane = 0;
+            swipe.Play();
         }
+      
 
         Vector3 targetPosition = transform.position.z * transform.forward + transform.position.y * transform.up;
 
@@ -88,5 +96,6 @@ public class PlayerController : MonoBehaviour
     {
         direction.y = jumpForce;
         anim.SetTrigger("Jump");
+        jump.Play();
     }
 }
