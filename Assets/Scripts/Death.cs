@@ -6,13 +6,13 @@ public class Death : MonoBehaviour
 {
     [SerializeField] private CharacterController characterController;
     public GameObject deathUI;
-
+    public Animator anim;
 
     void Start()
     {
         characterController = GetComponent<CharacterController>();
 
-
+        anim = GetComponent<Animator>();
         deathUI.gameObject.SetActive(false);
     }
 
@@ -22,6 +22,7 @@ public class Death : MonoBehaviour
         {
             Time.timeScale = 0;
             deathUI.gameObject.SetActive(true);
+            anim.SetTrigger("Death");
 
         }
 
