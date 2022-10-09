@@ -30,16 +30,12 @@ public class PlayerController : MonoBehaviour
           direction.y += gravity * Time.deltaTime;
         if (characterController.isGrounded)
         {
-            //direction.y = -1;
+  
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 Jump();
             }
-           /* else
-            {
-                direction.y += gravity * Time.deltaTime;
-            }
-           */
+          
         }
 
      
@@ -70,7 +66,16 @@ public class PlayerController : MonoBehaviour
             targetPosition += Vector3.right * laneDistance;
         }
 
-        transform.position = Vector3.Lerp(transform.position, targetPosition, 80 * Time.fixedDeltaTime);
+        // transform.position = Vector3.Lerp(transform.position, targetPosition, 80 * Time.fixedDeltaTime);
+
+        if (transform.position == targetPosition)
+            return;
+        Vector3 diff = targetPosition - transform.position;
+        Vector3 moveDir = diff.normalized * 40 * Time.deltaTime;
+        if (moveDir.sqrMagnitude < diff.sqrMagnitude)
+            characterController.Move(moveDir);
+        else
+            characterController.Move(diff);
     }
 
     private void FixedUpdate()

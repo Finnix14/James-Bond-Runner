@@ -444,7 +444,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &334535506
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2660,6 +2660,7 @@ GameObject:
   - component: {fileID: 1903787219}
   - component: {fileID: 1903787220}
   - component: {fileID: 1903787221}
+  - component: {fileID: 1903787222}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -2849,6 +2850,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1903787222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1903787214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bbe01ba62fb827489885dc22157fa54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pc: {fileID: 1903787219}
+  deathUI: {fileID: 334535505}
 --- !u!1 &1962594124
 GameObject:
   m_ObjectHideFlags: 0
