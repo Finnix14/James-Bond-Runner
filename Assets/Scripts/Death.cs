@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class Death : MonoBehaviour
 {
-    [SerializeField] private CharacterController characterController;
+    [SerializeField] private PlayerController pc;
     public GameObject deathUI;
     public Animator anim;
-
+    public AudioSource deadSound;
     void Start()
     {
-        characterController = GetComponent<CharacterController>();
+        pc = GetComponent<PlayerController>();
+        Time.timeScale = 1f;
 
         anim = GetComponent<Animator>();
         deathUI.gameObject.SetActive(false);
@@ -20,9 +21,16 @@ public class Death : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Obstacle"))
         {
-            Time.timeScale = 0;
+            anim.SetTrigger("Death");   
+            Time.timeScale = 0.25f;
+           
             deathUI.gameObject.SetActive(true);
-            anim.SetTrigger("Death");
+            pc.enabled = false;
+           
+
+            deadSound.Play();
+            deadSound.pitch = 0.5f;
+
 
         }
 
