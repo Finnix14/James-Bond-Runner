@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     private CharacterController characterController;
     private Vector3 direction;
     public float forwardSpeed;
+    public float maxSpeed;
 
     private int desiredLane = 1; // 0 left, 1 middle, 2 right
     public float laneDistance = 4;//the distance between lanes
@@ -29,8 +30,13 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        //increasing speed
         direction.z = forwardSpeed;
-          direction.y += gravity * Time.deltaTime;
+        if(forwardSpeed < maxSpeed)
+            forwardSpeed += 0.15f * Time.deltaTime;
+
+
+        direction.y += gravity * Time.deltaTime;
         if (characterController.isGrounded)
         {
   
