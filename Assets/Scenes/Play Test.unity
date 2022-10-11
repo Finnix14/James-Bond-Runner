@@ -3025,7 +3025,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e98577fda26f354090e10308c93da2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forwardSpeed: 0
+  forwardSpeed: 15
   laneDistance: 4
   jumpForce: 15
   gravity: -30
@@ -3163,7 +3163,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterController: {fileID: 0}
   deathUI: {fileID: 334535505}
-  anim: {fileID: 1903787220}
 --- !u!82 &1903787223
 AudioSource:
   m_ObjectHideFlags: 0
