@@ -2208,7 +2208,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1462471979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2598,7 +2598,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1683229431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3027,10 +3027,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forwardSpeed: 15
-  maxSpeed: 30
+  maxSpeed: 35
   laneDistance: 4
   jumpForce: 15
-  gravity: -30
+  gravity: -40
   anim: {fileID: 1903787220}
   playerScore: 0
   jump: {fileID: 1903787221}
@@ -3065,7 +3065,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d59de50ceaca31b40a36ee28c3a84f69, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 1a1da7e8a4aa8444b8eb67485b0f3d5b, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -3176,7 +3176,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c8e8a8aaabebee44882302b97f047dfc, type: 3}
+  m_audioClip: {fileID: 8300000, guid: bc78c5d788da31c41bbac96df39270af, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -3272,7 +3272,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 33e5e97d48bbe4b468f7122cdb12ea43, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 16b3441744c3a75418b12bd1739801ec, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

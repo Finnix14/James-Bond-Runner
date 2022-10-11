@@ -47,7 +47,10 @@ public class PlayerController : MonoBehaviour
           
         }
 
-     
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            anim.SetTrigger("Roll");
+        }
 
 
         if (Input.GetKeyDown(KeyCode.D))
