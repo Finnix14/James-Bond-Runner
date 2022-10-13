@@ -3169,8 +3169,8 @@ MonoBehaviour:
   anim: {fileID: 0}
   deadSound: {fileID: 1903787225}
   t: {fileID: 1903787215}
-  force: 1
-  radius: 0.2
+  force: 0.02
+  radius: 0.005
   _parts:
   - {fileID: 4794140829151025725}
   - {fileID: 3393978191836888268}
@@ -3384,7 +3384,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 625fb68e9d1c61941a821a6551ec80d4, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 513e3674305c1954cb6e08c0de7e4b09, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

@@ -11,7 +11,7 @@ public class Death : MonoBehaviour
     public AudioSource deadSound;
 
     public Transform t;
-    public float force;
+    public float force = 0.05f;
     public float radius;
 
     public List<GameObject> _parts;
@@ -32,14 +32,14 @@ public class Death : MonoBehaviour
             
             
             // anim.SetTrigger("Death");   
-            Time.timeScale = 0.25f;
+            Time.timeScale = 0.8f;
            
             deathUI.gameObject.SetActive(true);
             pc.enabled = false;
            
 
             deadSound.Play();
-            deadSound.pitch = 0.5f;
+           
 
             anim.enabled = false;
           
