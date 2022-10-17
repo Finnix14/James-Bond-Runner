@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.UIElements;
 
 public class Death : MonoBehaviour
@@ -14,12 +15,14 @@ public class Death : MonoBehaviour
     public float force = 0.05f;
     public float radius;
 
+
+
     public List<GameObject> _parts;
     void Start()
     {
         pc = GetComponent<PlayerController>();
         Time.timeScale = 1f;
-
+     
         anim = GetComponent<Animator>();
         deathUI.gameObject.SetActive(false);
     }
@@ -31,7 +34,7 @@ public class Death : MonoBehaviour
             dyingFR();
             
             
-            // anim.SetTrigger("Death");   
+         
             Time.timeScale = 0.8f;
            
             deathUI.gameObject.SetActive(true);
@@ -42,7 +45,10 @@ public class Death : MonoBehaviour
            
 
             anim.enabled = false;
-          
+
+           
+            
+            
 
         }
 
