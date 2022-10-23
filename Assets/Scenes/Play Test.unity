@@ -896,7 +896,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -332, y: 613.2}
+  m_AnchoredPosition: {x: -194, y: 361}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &513112031
@@ -1900,9 +1900,11 @@ MonoBehaviour:
   - {fileID: 1385089783096108170, guid: 3effef13dd92679429363c284f0363ae, type: 3}
   - {fileID: 8952935786471538026, guid: c841b34ea4d4f2f49988bd86a8da42c4, type: 3}
   - {fileID: 1385089783096108170, guid: d7d72bbc8d434ff44b998e9b9ac741b1, type: 3}
-  - {fileID: 8952935786471538026, guid: c841b34ea4d4f2f49988bd86a8da42c4, type: 3}
+  - {fileID: 2802376611980836417, guid: 8821b0bb67034274f951fc61e29b3584, type: 3}
   - {fileID: 4622032813854403041, guid: fac2fae55372cf445be9241bad927461, type: 3}
   - {fileID: 2802376611980836417, guid: 80f9ee10a02c4b34f9f1e9600f3e500e, type: 3}
+  - {fileID: 2802376611980836417, guid: ef275c927f3efa141812041615fdcf24, type: 3}
+  - {fileID: 1385089783096108170, guid: 6e4b3be6e6f934f43a204bca139cc85b, type: 3}
   zSpawn: 0
   tileLength: 25.5
   numberOfTiles: 4
